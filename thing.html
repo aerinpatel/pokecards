@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="thing.css">
+</head>
+<body>
+    <video src="img/pokemon-rayquaza.3840x2160.mp4" autoplay loop muted></video>
+    <div class="body-original">
+        <nav>
+            <div class="nav-left">
+                <div class="logo"></div>
+                <a href="index.html">Poke<span class="underline">Cards</span></a>
+            </div>
+            <ul class="nav-right">
+                <li class="nav-right-one"><a href="#twitter"><i class="fa-brands fa-x-twitter"></i> Twitter</a></li>
+                <li class="nav-right-sec"><a href="#github"><i class="fa-regular fa-star"></i> star it</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="center">
+                <div class="main-top">
+                    <h1>Hey <span class="underline name"> name</span> here are your pokemons</h1><br>
+                </div>
+                <div class="main-bottom">
+                    <form id="pokemon-form">
+                        <div class="form-grp1">
+                            <label for="number-of-cards">Number of Cards:</label>
+                            <input type="number" id="number-of-cards" name="number-of-cards" min="1" required>
+                        </div>
+                        <div class="form-grp2">
+                            <label for="category">Category:</label>
+                            <select type="text" id="category" name="category" required>
+                                <option value="fire">fire</option>
+                                <option value="water">water</option>
+                                <option value="grass">grass</option>
+                                <option value="electric">electric</option>
+                                <option value="ground">ground</option>
+                                <option value="flying">flying</option>
+                                <option value="rock">rock</option>
+                                <option value="bug">bug</option>
+                                <option value="dark">dark</option>
+                                <option value="light">light</option>
+                            </select>
+                        </div>
+                        <button id="fetch-pokemon" type="submit">Fetch Pokémon</button>
+                    </form> 
+                    <div id="pokemon-cards"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
