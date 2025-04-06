@@ -48,23 +48,40 @@ nav{
     border: 2px solid black;
     border-radius: 15px;
     padding: 10px 20px;
+    
     a{
         color: black;
+        font-size: 1.2rem;
     }
 }
 .nav-right-one:hover{
+    transition: 0.3s ease-in-out;
     background-color: black;
     a{
         color: white;
+        
     }
 }
+
+
 .nav-right-sec{
+
     border: 2px solid yellow;
     border-radius: 15px;
     padding: 10px 20px;
+
     margin-left: 10px;
     a{
         color: yellow;
+        font-size: 1.2rem;
+    }
+}
+.nav-right-sec:hover{
+    transition: 0.3s ease-in-out;
+    background-color: yellow;
+    a{
+        color: black;
+        
     }
 }
 .underline{
@@ -175,7 +192,12 @@ form{
     justify-content: center;
     align-items: center;
     margin: 1rem;
+    height: 100%;
 }
+.center{
+    height: 100%;
+}
+
 .card{
     width: 13rem;
     height: 17rem;
@@ -186,4 +208,20 @@ form{
     margin: 1vw;
     border-radius: 15px;
     margin-bottom: 20px;
+}
+.main-top h1 {
+    color: #000000;
+    font-size: 3rem;
+    min-height: 100vw;
+    text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00, 0 0 30px #ffcc00;
+    animation: glowAnimation 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glowAnimation {
+    from {
+        text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00, 0 0 30px #ffcc00;
+    }
+    to {
+        text-shadow: 0 0 20px #ffcc00, 0 0 30px #ffcc00, 0 0 40px #ffcc00;
+    }
 }
